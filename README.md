@@ -1,12 +1,12 @@
 # Route53 - Subdomains takeover
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=%40syed_umar)](https://twitter.com/syed__umar)
+[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=%40syed_umar)](https://twitter.com/)
 
-[contributors-shield]: https://img.shields.io/github/contributors/Anon-Exploiter/Route53-SubdomainsTakeover.svg?style=flat-square
-[contributors-url]: https://github.com/Anon-Exploiter/Route53-SubdomainsTakeover/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/Anon-Exploiter/Route53-SubdomainsTakeover.svg?style=flat-square
-[issues-url]: https://github.com/Anon-Exploiter/Route53-SubdomainsTakeover/issues
+[contributors-shield]: https://img.shields.io/github/contributors/trhacknon/Route53-SubdomainsTakeover.svg?style=flat-square
+[contributors-url]: https://github.com/trhacknon/Route53-SubdomainsTakeover/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/trhacknon/Route53-SubdomainsTakeover.svg?style=flat-square
+[issues-url]: https://github.com/trhacknon/Route53-SubdomainsTakeover/issues
 
 A script to fetch all route53 hosted zones, fetch all CNAME DNS records of each zone (domain) then check all the records containing elasticbeanstalk applications -- **if they're takeoverable** -- and post all that on Slack!  
 
@@ -17,7 +17,7 @@ A script to fetch all route53 hosted zones, fetch all CNAME DNS records of each 
 
 ### Downloading & Installation
 ```bash
-git clone https://github.com/Anon-Exploiter/Route53-SubdomainsTakeover
+git clone https://github.com/trhacknon/Route53-SubdomainsTakeover
 cd Route53-SubdomainsTakeover/
 python3 -m venv env && source env/bin/activate # Create virtualenv to install packages in
 pip install -r requirements.txt
@@ -100,7 +100,7 @@ In the above case **subdomain1** and **subdomain2** are takeoverable!
 
 ### Todos
 - <s>Add region check (what region are we in?)</s>
-- <s>Add Slack alerting</s> <small>[5b6d279](https://github.com/Anon-Exploiter/Route53-SubdomainsTakeover/commit/5b6d27918079af709d58f29400be4591c5c3238e)</small> covers it
+- <s>Add Slack alerting</s> <small>[5b6d279](https://github.com/trhacknon/Route53-SubdomainsTakeover/commit/5b6d27918079af709d58f29400be4591c5c3238e)</small> covers it
 - Create a Docker image of the script
 - Integrate Static hosting S3 bucket takeover check
 - Integrate other open-source subdomain takeover check scripts
